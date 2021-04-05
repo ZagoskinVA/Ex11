@@ -1,10 +1,11 @@
-// Copyright 2021
+// Copyright 2021 Vlad
+#include "Train.h"
 #include <iostream>
-#include <string>
-
-#include "train.h"
 
 int main() {
-  return 0;
+    Train train;
+    for (int i = 0; i < 7432; i++) {
+        train.addCage();
+    }
+    std::cout << "Lenght: " << train.findLenght() << std::endl;
 }
-

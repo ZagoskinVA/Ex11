@@ -1,6 +1,6 @@
 set(header_path "${${PROJECT_NAME}_SOURCE_DIR}/include")
 set(header ${header_path}/train.h)
-set(src train.cpp)
+set(src Train.cpp)
 
 
 add_library(${PROJECT_NAME} SHARED
