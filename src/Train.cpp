@@ -1,8 +1,7 @@
 // Copyright 2021 Vlad
 #include "Train.h"
 
-void Train::addCage()
-{
+void Train::addCage() {
     Cage* elm = new Cage();
     if (last) {
         elm->next = last;
@@ -15,8 +14,7 @@ void Train::addCage()
     last = elm;
 }
 
-void Train::printState()
-{
+void Train::printState() {
     Cage* temp = first;
     if (first) {
         do {
@@ -24,11 +22,9 @@ void Train::printState()
             temp = temp->next;
         } while (temp != first);
     }
-
 }
 
-int Train::findLenght()
-{
+int Train::findLenght() {
     int count = 0;
     int lenght = 0;
     Cage* temp;
@@ -38,7 +34,7 @@ int Train::findLenght()
     temp = first->next;
     while (true) {
         if (!temp)
-            throw "Не зацикленный список";
+            throw "No cycle";
         count++;
         if (!temp->get()) {
             temp->on();

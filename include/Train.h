@@ -3,8 +3,7 @@
 #define INCLUDE_TRAIN_H_
 #include "Cage.h"
 
-class Train
-{
+class Train {
  private:
     Cage* first;
     Cage* last;

@@ -1,5 +1,5 @@
 set(header_path "${${PROJECT_NAME}_SOURCE_DIR}/include")
-set(header ${header_path}/train.h)
+set(header ${header_path}/Train.h)
 set(src Train.cpp)
 
 

@@ -3,8 +3,7 @@
 #define INCLUDE_CAGE_H_
 #include <iostream>
 
-class Cage
-{
+class Cage {
  private:
     bool light;
  public:
